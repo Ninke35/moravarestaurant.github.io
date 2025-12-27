@@ -1,0 +1,377 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+:root {
+  --black: #21272d;
+  --white: #ffffff;
+  --darkO: #ea5141;
+  --lightO: #f2705c;
+}
+header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  position: sticky;
+  top: 0px;
+  justify-content: space-around;
+  backdrop-filter: blur(4px);
+  background-color: var(--white);
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+#logo {
+  width: 320px;
+  height: 40px;
+  margin: 25px 0px;
+}
+#logo img {
+  width: 220px;
+  height: 50px;
+}
+#nav {
+  width: 50%;
+  text-align: right;
+  display: inline;
+  margin-top: 38px;
+  margin-right: 50px;
+}
+#nav a {
+  transition: all 300ms;
+}
+#nav ul li {
+  font-size: 15pt;
+  padding: 0px 25px;
+  display: inline;
+}
+.link {
+  color: var(--black);
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.hover a:hover,
+.current {
+  color: var(--darkO);
+  padding: 5px 0px;
+}
+body::-webkit-scrollbar {
+  width: 12px;
+  background-color: var(--white);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--darkO);
+  border-radius: 5px;
+}
+body {
+  font-family: "Advent Pro", sans-serif;
+  scroll-behavior: smooth;
+}
+footer {
+  background-color: var(--black);
+  display: block;
+}
+.footerc {
+  display: flex;
+  align-items: center;
+  padding: 20px 0px;
+  color: var(--black);
+  width: 1200px;
+  margin: 0px auto;
+}
+.content {
+  width: 33.3%;
+  text-align: center;
+}
+.content h4 {
+  font-size: 30px;
+}
+.content h4,
+.content p {
+  margin-bottom: 10px;
+  color: var(--white);
+  font-size: 20px;
+}
+.content a {
+  color: var(--white);
+}
+.content a:hover {
+  color: var(--darkO);
+}
+.footer-list li {
+  float: right;
+  width: 200px;
+  text-align: end;
+  font-size: 20px;
+}
+.bold {
+  font-weight: bold;
+}
+.contentn h4,
+.content p {
+  text-align: left;
+}
+.linksn {
+  text-align: right;
+}
+#logo-footer img {
+  width: 100%;
+  margin-top: 20px;
+  margin-left: 20px;
+  height: 100px;
+  width: 210px;
+}
+.links {
+  margin: 20px 0px 20px 20px;
+}
+.links a:hover {
+  color: var(--darkO);
+}
+.links a {
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 30px;
+  color: var(--white);
+}
+.footer-list ul li {
+  list-style-type: none;
+}
+.copyright p {
+  margin-left: 80px;
+  color: var(--white);
+  font-size: 20px;
+}
+.linksn h4 {
+  font-size: 30px;
+}
+.linksn h4 {
+  font-size: 30px;
+}
+#gallery {
+  width: 100%;
+  height: 600px;
+  background-color: var(--white);
+}
+
+#title-gallery {
+  width: 100%;
+  text-align: center;
+  margin: 20px 0px;
+  font-family: "Advent Pro", sans-serif;
+  font-size: 23px;
+  background-color: var(--darkO);
+}
+
+.gallery-row {
+  width: 100%;
+  margin: 20px 0px;
+}
+
+.gallery-block {
+  width: 30%;
+  height: 250px;
+  float: left;
+  transition: transform 0.2s;
+}
+
+.gallery-block:hover {
+  transform: scale(0.95);
+}
+
+.gallery-block img {
+  width: 100%;
+  height: 100%;
+}
+
+.block2 {
+  margin: 0px 5%;
+}
+
+.block3 {
+  float: right;
+}
+
+#author {
+  width: 100%;
+  margin: 20px auto;
+  background-color: var(--white);
+  display: flex;
+  justify-content: space-evenly;
+}
+#me {
+  box-shadow: 0px 0px 15px 15px rgba(0, 0, 0, 0.6);
+  height: 446px;
+}
+#authortxt {
+  font-family: "Advent Pro", sans-serif;
+  width: 400px;
+  text-align: center;
+  margin-top: 120px;
+  margin-left: 160px;
+  font-size: 30px;
+}
+table {
+  border-collapse: collapse; /* Spajamo granice ćelija kako ne bi imali rupe između njih */
+}
+
+td {
+  padding: 7px;
+}
+
+td:first-child {
+  font-weight: bold;
+}
+
+tr:not(:last-child) td {
+  border-bottom: 3px solid var(--darkO); /* Dodajemo donju liniju ispod svake ćelije osim poslednje */
+}
+
+#main {
+  width: 100%;
+  background-image: url("../img/cover.jpg");
+}
+.bg-image {
+  width: 100%;
+  height: 525px;
+  background-position: center;
+  background-size: cover;
+  position: static;
+  display: flex;
+  justify-content: center;
+}
+
+.shadow {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: inherit;
+  padding: 10% 0%;
+}
+.shadow h1 {
+  color: var(--darkO);
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 90px;
+  letter-spacing: 7px;
+  font-weight: bold;
+}
+.shadow h2 {
+  padding-top: -20px;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 3px;
+  font-weight: 300;
+}
+.ponuda {
+  background-color: var(--white);
+  width: 100%;
+  height: 500px;
+}
+.ponuda img {
+  float: left;
+  height: 400px;
+  width: 640px;
+  border-radius: 5px;
+}
+#nosac-slike {
+  width: 50%;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0px;
+}
+.ponuda .nosecitekst {
+  float: left;
+  color: var(--black);
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 50px);
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  height: 400px;
+  text-align: center;
+}
+
+.ponuda .nosecitekst h2 {
+  width: 200px;
+  height: 20px;
+  font-size: 30px;
+  color: var(--darkO);
+  margin-left: 250px;
+}
+.ponuda .nosecitekst p {
+  width: 500px;
+  height: 150px;
+  margin-left: 100px;
+  font-size: 23px;
+}
+/*ponovo*/
+
+.ponuda1 {
+  background-color: var(--black);
+  width: 100%;
+  height: 500px;
+}
+.ponuda1 img {
+  float: left;
+  height: 400px;
+  width: 640px;
+  border-radius: 5px;
+}
+#nosac-slike1 {
+  width: 50%;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0px;
+}
+.ponuda1 .nosecitekst1 {
+  float: left;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 50px);
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  height: 400px;
+  text-align: center;
+}
+
+.ponuda1 .nosecitekst1 h2 {
+  width: 200px;
+  height: 20px;
+  font-size: 30px;
+  color: var(--darkO);
+  margin-left: 250px;
+}
+.ponuda1 .nosecitekst1 p {
+  width: 500px;
+  height: 150px;
+  margin-left: 100px;
+  font-size: 23px;
+}
+#quote {
+  position: relative;
+  background-image: url("../img/quote.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 30px 0px;
+  height: 120px;
+}
+#quote p {
+  font-size: 30px;
+  letter-spacing: 1px;
+  color: var(--white);
+  text-align: center;
+  margin-top: 10px;
+}
